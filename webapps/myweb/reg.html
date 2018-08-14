@@ -1,0 +1,59 @@
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>用户注册</title>
+	</head>
+	<body>
+		<center>
+			<h1>欢迎注册</h1>
+			<!-- 
+				form表单
+				表单是用来提交用户输入的数据的。
+				表单中会包含很多输入域，当提交表单时，这些
+				输入域中的内容会被提交到服务端。
+				form有两个重要的属性
+				action:用来指定该表单提交的路径，这里通常
+				              也是定义为相对路径
+				method:用来指定表单的提交方式
+				表单的提交方式有:
+				get:地址栏形式提交，在表单提交时，所有输入域的
+				        内容会被追加到地址栏中"?"的右侧
+				post:所有表单数据会被包含在请求的消息正文中
+				          提交给服务端              
+			
+			 -->
+			<form action="reg" method="post">
+				<table border="1">
+					<tr>
+						<td align="center">用户名:</td>
+						<td><input type="text" name="username" size="32"></td>
+					</tr>
+					<tr>
+						<td align="center">密码:</td>
+						<td><input type="password" name="password" size="32"></td>
+					</tr>
+					<tr>
+						<td align="center">昵称:</td>
+						<td><input type="text" name="nickname" size="32"></td>
+					</tr>
+					<tr>
+						<td align="center">年龄:</td>
+						<td><input type="text" name="age" size="32"></td>
+					</tr>
+					<tr>
+						<td align="center" colspan="2">
+						<!-- 
+							提交按钮的类型为submit,当点击该按钮后
+							作用是将表单提交。需要注意，该提交按钮
+							也必须包含在要提交的form标签中才可以。
+						 -->
+							<input type="submit" value="注册">
+						</td>
+					</tr>
+				</table>
+			</form>
+			<br>
+			<a href="index.html">回首页</a>
+		</center>
+	</body>
+</html>
